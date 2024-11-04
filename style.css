@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+    place-items: center; /* Centers content both horizontally and vertically */
+    height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+  width: 600px;
+  border-radius: 20px;
+  background-color: aqua;
+  position: relative;
+}
+
+label {
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="number"] {
+  width: 60px;
+}
+
+.container-progressbar-horizontal {
+  width: 100%;
+  max-width: 600px;
+}
+
+.progressbar-horizontal {
+  position: relative;
+  background: #e0e0e0;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 10px 0;
+  height: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.progressbar-horizontal__fill {
+  height: 100%;
+  width: 0;
+  border-radius: 20px;
+  transition: width 0.5s ease, background-color 0.5s ease;
+  background: linear-gradient(45deg, #3bd, #2a9d8f);
+}
+
+.html-fill {
+  background: linear-gradient(45deg, rgb(222, 110, 12), #f4f420);
+}
+
+.css-fill {
+  background: linear-gradient(45deg, rgb(204, 51, 181), #e30808);
+}
+
+.progressbar-horizontal__text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}

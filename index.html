@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Change Buttons</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <label>
+        HTML Progress:
+        <input type="number" id="html-progress" value="33" min="0" max="100" />
+      </label>
+      <label>
+        HTML Color:
+        <input type="color" id="html-color" value="#3bd" />
+      </label>
+      <label>
+        CSS Progress:
+        <input type="number" id="css-progress" value="33" min="0" max="100" />
+      </label>
+      <label>
+        CSS Color:
+        <input type="color" id="css-color" value="#3bc" />
+      </label>
+    </div>
+    <div class="container-progressbar-horizontal">
+      <div class="progressbar-horizontal">
+        <div class="progressbar-horizontal__fill html-fill"></div>
+        <span class="progressbar-horizontal__text">HTML Skills</span>
+      </div>
+      <div class="progressbar-horizontal">
+        <div class="progressbar-horizontal__fill css-fill"></div>
+        <span class="progressbar-horizontal__text">CSS Skills</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
